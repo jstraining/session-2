@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var teststr = 'Some Test Value';
+        /*search()*/ // return the index of first match of a regular expression, or -1 if not found
+        document.write('Index of first match of regExp = ' + teststr.search(/val/i) + '<hr>');
+        /*slice()*/ // cut part of string from to index. If call without prameter, juxt copy a string
+        document.write('Part of string from index 2 to 6 = ' + teststr.slice(2, 6) + '<hr>');
+        document.write('Just copy of string = ' + teststr.slice() + '<hr>');
+        /*split()*/ // splits a string into array, using separator.
+        // you can use optional second parameter as limit of el
+        document.write('Array separated by space = ' + teststr.split(' ') + '<hr>');
+        document.write('Array separated by space with limit of two elements = ' + teststr.split(' ', 2) + '<hr>');
+        /*substr()*/ //return a substring using two parameter. first - start index. second -symbol amount
+        document.write('Substr of 5 elements from 2nd index = ' + teststr.substr(2, 5) + '<hr>');
+        /*substring()*/ // Returns a substring between two indexes.
+        // if second is not specifies, from index to the end
+        document.write('substring from 2 to 5 index = ' + teststr.substring(2, 5) + '<hr>');
+        document.write('substring from 2 to the end = ' + teststr.substring(2) + '<hr>');
+        /*toLowerCase() and toUpperCase()*/ // return a full string in a lowerCase and in a UpperCase
+        document.write('All symbols in lower case = ' + teststr.toLowerCase() + '<hr>');
+        document.write('All symbols in upper case = ' + teststr.toUpperCase() + '<hr>');
+        //toLocaleLowerCase() and toLocaleUpperCase() in most cases return the same result
+        // as toLowerCase() and toUpperCase(), but in some locales result may be different
+        /*trim()*/ // removes spaces from both ends of a string
+        var withSpaces = '    some Value            ';
+        document.write('String after trimimg = ' + withSpaces.trim() + '<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>

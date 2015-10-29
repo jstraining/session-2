@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = [1, 15, 154, -25, 3, 1069, 9, 100];
+        /*filter()*/ // return array of elements that meets the condition in function
+        function isBiggerThanTen (element, index, array) {
+            return (element > 10);
+        };
+
+        document.write(testArr.filter(isBiggerThanTen) + '<hr>');
+
+        /*indexOf()*/ //return the first index within of array that equal to value
+        // you can specify index of element from that start to search
+        // return -1 in case of any element is equal to specified value
+        document.write('Index of element -25 =' + testArr.indexOf(-25) + '<hr>');
+        document.write('Index of element 1 if start to search not from first element =' + testArr.indexOf(1, 2) +
+                ' because of element 1 with index 0 ' + '<hr>');
+
+        /*lastIndexOf()*/ // the same as previous function, but return last element, not first
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

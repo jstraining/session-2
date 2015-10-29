@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        // for in is type of loop for looking through object values
+        var arr = ['someVal', 5, 10, 'test'];
+
+        for (var temp in arr) {
+            document.write(arr[temp]);
+            document.write('<br>');
+        }
+
+        document.write('<hr>');
+
+        var obj = {
+            age: 15,
+            name: 'John',
+            getName: function () {
+                return obj.name;
+            }
+        };
+
+        for (var temp in obj) {
+            document.write(obj[temp]);
+            document.write('<br>');
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

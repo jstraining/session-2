@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = [1, 15, 154, -25, 3, 1069, 9, 100];
+        /*map()*/ // return new array of changed by function elements
+        var roots = testArr.map(Math.sqrt);
+        document.write("roots is : " + roots + '<hr>');
+
+        /*reduce()*/ // function simultaneuosly two values from array and call function for them.
+        // in the end we have only one element
+        var sum = testArr.reduce(function(a, b){ return (a * 2) + b; });
+        document.write('sum is : ' + sum + '<hr>');
+
+        /*reduceRight()*/ // the same but from starts from the end
+        /*reverse()*/ //Reverses the order of the elements of an array
+        var reversedArr = testArr.reverse();
+        document.write('Reversed array ' + reversedArr);
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

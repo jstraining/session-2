@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        // another array also can be an element of array! simple example
+        var arr = [['someVal', 5, 10, 'test'],['John', 2.5, -150, 'value']];
+        // in this case we can access value by next syntax
+        document.write(arr[0][0]); // print to document value 'someValue'
+        document.write('<hr>');
+        // or we also can use for loop inside another loop
+        for (var i = 0; i < arr.length; i++) {
+            for(var j = 0; j < arr[i].length; j++) {
+                document.write(arr[i][j]);
+                document.write('<br>');
+            }
+            document.write('<hr>');
+        }
+        document.write('<hr>');
+        // each array has property lenght that keep amount of element in array
+        // we can use this property to easily add value to the end of array
+        arr[arr.length] = 'new value';
+        document.write(arr);
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

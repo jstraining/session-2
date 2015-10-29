@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = ['testValue1', 'testValue2', 'testValue3', 'testValue4', 'testValue5'];
+        /*forEach()*/ //Calls a custom function for each element in the array and return result.
+        document.write('Result of forEach function execution:');
+        // you also can provide parameter for this, as second parameter
+        testArr.forEach(printArr);
+
+        function printArr (element, index, array) {
+            document.write(element + ' with number ' + index + '<br>' );
+        };
+        document.write('<hr>');
+        /*join()*/ // convert an array to string, but with comma separator by default
+        document.write('Result of join with default separator:' +'<br>');
+        document.write(testArr.join() + '<hr>');
+        // also you can provide separator parameter to join function. for example slash
+        document.write('Result of join with /// separator:' +'<br>');
+        document.write(testArr.join('///') + '<hr>');
+        /*concat()*/ // adds one array to another and return result
+        var createdArr = testArr.concat([15,35,43]);
+        document.write(createdArr  + '<hr>');
+        /*every()*/ // return true if all elements in array satisfies condition
+        function isStr (element, index, array) {
+            return (typeof element == 'string');
+        };
+        document.write(testArr.every(isStr) + '<hr>');
+        document.write(createdArr.every(isStr) + '<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

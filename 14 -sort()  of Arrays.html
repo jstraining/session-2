@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = [1, 15, 154, -25, 3, 1069, 9, 100];
+        /*sort()*/ // using for sorting an array.
+        // if compare fumction is not supplied, elements are sorted and comparing in Unicode point order
+        document.write(testArr.sort() + '<hr>');
+
+        function sortFromSmallerToBigger (a, b) {
+            return a - b;
+        }
+
+        function sortFromBiggerToSmaller (a, b) {
+            return b - a;
+        }
+
+        document.write('Sort from smaller to bigger - ' + testArr.sort(sortFromSmallerToBigger) + '<hr>');
+        document.write('Sort from bigger to smaller - ' + testArr.sort(sortFromBiggerToSmaller) + '<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

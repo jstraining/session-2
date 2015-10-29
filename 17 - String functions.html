@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var teststr = 'Some Test Value';
+        /*charAt()*/ //returns the character at the specified index.
+        document.write('6th symbol of string = ' + teststr.charAt(5) + '<hr>');
+        /*charCodeAt()*/ //returns unicode number of element at index
+        // you can find these codes on the web page http://unicode-table.com/en/#latin-extended-b
+        document.write('Unicode number of 6th symbol of string = ' + teststr.charCodeAt(5) + '<hr>');
+        /*concat()*/ //Does the same as array concat function. combines two strings and return a new string
+        document.write('Result of combining two strings = ' + teststr.concat(' concatedValue') + '<hr>');
+        /*indexOf()*/ // return first index of specified value. or -1 if value not found
+        // you can also specify, index from what start search.
+        document.write('First index of \'e\' symbol is = ' + teststr.indexOf('e') + '<hr>');
+        document.write('Result if specify non-exisiting value = ' + teststr.indexOf('F') + '<hr>');
+        /*lastIndexOf()*/ // return first index of specified value. or -1 if value not found
+        document.write('Last index of \'e\' symbol is = ' + teststr.lastIndexOf('e') + '<hr>');
+        document.write('Result if specify non-exisiting value = ' + teststr.lastIndexOf('F') + '<hr>');
+        /*localeCompare()*/ //return 0 if strings matches 100%, return
+        // 1 if parameter value comes before in the local sort order and -1 if after
+        document.write('localeCompare with \'abstract\' value = ' + teststr.localeCompare('abstract') + '<hr>');
+        document.write('localeCompare with \'zz top\' value = ' + teststr.localeCompare('zz top') + '<hr>');
+        /*match()*/ //search values using regExp and return them
+        document.write('Search using regExp = ' + teststr.match(/[S-T]/gi) + '<hr>');
+        /*replace()*/ //function using to replace a value that match a regular expression with a string parameter
+        document.write('String after replacing = ' + teststr.replace(/value/i, 'new value') + '<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>

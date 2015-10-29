@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = [1, 15, 154, -25, 3, 1069, 9, 100];
+        /*slice()*/ // function that cuts some part of an array and return it
+        // if do not specify anything, this function copy full array
+        document.write('Just copy an array. if do not specify start/end indexes - ' +
+                testArr.slice() + '<hr>');
+        document.write('return new array from second element to fifth - ' +
+                testArr.slice(1, 4) + '<hr>');
+        // you can also use a negative value to select from the end of array
+        document.write('return elements starting with 4th from the end to second from the end - ' +
+                testArr.slice(-4, -1) + '<hr>');
+
+        /*some()*/ //similar to every(), but return true if only one of element satisfies a testing func
+        document.write('return true because fifth element is bigger than 1000 - ' +
+                testArr.some(function (element) {
+                    return element > 1000;
+                }) + '<hr>');
+
+        document.write('return false because fifth element is bigger than 1000 - ' +
+                testArr.some(function (element) {
+                    return element > 2000;
+                }) + '<hr>');
+        /*toSource()*/ // return string representation of an array. Working only in mozilla
+        document.write(testArr.toSource() + '<hr>');
+
+        /*toString()*/ // return string representation of an array. Also working only in mozzila
+        document.write(testArr.toString());
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+

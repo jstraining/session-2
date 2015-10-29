@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        var testArr = [1, 15, 154, -25, 3, 1069, 9, 100];
+        /*push()*/ //adds one or more element to the end of an array and return new length
+        document.write('Length of array before push - ' + testArr.length + '<hr>');
+        document.write('Length of array after push - ' + testArr.push('pushed value', 1234) + '<hr>');
+        document.write('Array after push - ' + testArr + '<hr>');
+
+        /*unshift()*/ // do the same as push, but from the from of array and return new length
+        // need more resources, because all elements shifted to right
+        document.write('Length of array before unshift - ' + testArr.length + '<hr>');
+        document.write('Length of array after unshift - ' + testArr.unshift('unshiftedVal', -500) + '<hr>');
+        document.write('Array after unshift - ' + testArr + '<hr>');
+
+        /*splice()*/ //adds or remove element/elements from array.
+        // you can specifies at what position to add removes an element. use negative to start from the end
+        // next parametr, how many elements should be deleted. All next parametr can be new elements of an array
+        // return deleted elements
+        testArr.splice(5, 0, 'el 1', 'el 2','el 3');
+        document.write('Add three elements to the middle of an array - ' + testArr + '<hr>');
+
+        document.write('Deleted elements from an array - ' + testArr.splice(5, 3) + '<hr>');
+        document.write('Array after deleting - ' + testArr + '<hr>');
+
+        document.write('Deleted elements from an array - ' + testArr.splice(5, 2, 'el 1', 'el 2','el 3') + '<hr>');
+        document.write('Array after deleting and adding - ' + testArr + '<hr>');
+    </script>
+</head>
+<body>
+</body>
+</html>
+
+
+
+
+
+
+
